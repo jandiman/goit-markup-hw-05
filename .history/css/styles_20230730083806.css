@@ -42,12 +42,6 @@ body {
   letter-spacing: 0.32px;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .container {
   width: 1158px;
   padding: 0 15px;
@@ -125,9 +119,7 @@ img {
   color: var(--ocean);
 }
 
-.header-link:hover::after,
-.header-link:focus::after {
-  content: '';
+.header-link::after {
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -529,8 +521,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-item-card:hover .project-item-cover-text,
-.project-item-card:focus .project-item-cover-text {
+.project-item-cover:hover .project-item-cover-text {
   transform: translateY(0);
 }
 

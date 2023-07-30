@@ -120,11 +120,6 @@ img {
   position: relative;
 }
 
-.header-link:hover,
-.header-link:focus {
-  color: var(--ocean);
-}
-
 .header-link:hover::after,
 .header-link:focus::after {
   content: '';
@@ -136,6 +131,7 @@ img {
   border-radius: 2px;
   border: 2px solid var(--ocean);
   background-color: var(--ocean);
+  color: var(--ocean);
 }
 
 .header-link-active {

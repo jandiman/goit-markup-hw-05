@@ -125,8 +125,7 @@ img {
   color: var(--ocean);
 }
 
-.header-link:hover::after,
-.header-link:focus::after {
+.header-link::after {
   content: '';
   position: absolute;
   left: 0;

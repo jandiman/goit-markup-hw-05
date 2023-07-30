@@ -121,14 +121,16 @@ img {
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header-link-active::after {
   color: var(--ocean);
+  content: '';
 }
 
-.header-link:hover::after,
-.header-link:focus::after {
-  content: '';
-  position: absolute;
+.header-link-active {
+  position: relative;
+  color: var(--ocean);
+  font-weight: 500;
   left: 0;
   bottom: -1px;
   width: 100%;
@@ -136,12 +138,6 @@ img {
   border-radius: 2px;
   border: 2px solid var(--ocean);
   background-color: var(--ocean);
-}
-
-.header-link-active {
-  position: relative;
-  color: var(--ocean);
-  font-weight: 500;
 }
 
 .header-link-active::after {

@@ -123,10 +123,6 @@ img {
 .header-link:hover,
 .header-link:focus {
   color: var(--ocean);
-}
-
-.header-link:hover::after,
-.header-link:focus::after {
   content: '';
   position: absolute;
   left: 0;

@@ -42,12 +42,6 @@ body {
   letter-spacing: 0.32px;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .container {
   width: 1158px;
   padding: 0 15px;
@@ -125,9 +119,7 @@ img {
   color: var(--ocean);
 }
 
-.header-link:hover::after,
-.header-link:focus::after {
-  content: '';
+.header-link::after {
   position: absolute;
   left: 0;
   bottom: -1px;

@@ -121,14 +121,10 @@ img {
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header-link-active::after {
   color: var(--ocean);
-}
-
-.header-link:hover::after,
-.header-link:focus::after {
   content: '';
-  position: absolute;
   left: 0;
   bottom: -1px;
   width: 100%;
