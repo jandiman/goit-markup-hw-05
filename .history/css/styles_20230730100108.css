@@ -132,16 +132,9 @@ img {
   bottom: -1px;
   width: 100%;
   height: 4px;
-  opacity: 0;
   border-radius: 2px;
   border: 2px solid var(--ocean);
   background-color: var(--ocean);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover::after,
-.header-link:focus::after {
-  opacity: 1;
 }
 
 .header-link-active {
@@ -150,14 +143,13 @@ img {
   font-weight: 500;
 }
 
-.header-link.header-link-active::after {
+.header-link-active::after {
   content: '';
   position: absolute;
   left: 0;
   bottom: -1px;
   width: 100%;
   height: 4px;
-  opacity: 1;
   border-radius: 2px;
   border: 2px solid var(--ocean);
   background-color: var(--ocean);
